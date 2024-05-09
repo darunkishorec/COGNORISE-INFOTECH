@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div style="max-width: 300px; margin: 50px auto; background-color: #ececec; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px;">
+    <div style="font-size: 24px; padding: 10px; background-color: #fff; border: 1px solid #ccc; border-radius: 5px; text-align: right; margin-bottom: 10px;" id="display">0</div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer; background-color: #d3d3d3; border: none; transition: background-color 0.3s ease;" onclick="clearDisplay()">AC</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer;" onclick="appendNumber('7')">7</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer;" onclick="appendNumber('8')">8</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer;" onclick="appendNumber('9')">9</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer; background-color: #f39c12; color: #fff;" onclick="appendOperator('/')">/</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer;" onclick="appendNumber('4')">4</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer;" onclick="appendNumber('5')">5</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer;" onclick="appendNumber('6')">6</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer; background-color: #f39c12; color: #fff;" onclick="appendOperator('*')">*</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer;" onclick="appendNumber('1')">1</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer;" onclick="appendNumber('2')">2</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer;" onclick="appendNumber('3')">3</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer; background-color: #f39c12; color: #fff;" onclick="appendOperator('-')">-</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer;" onclick="appendNumber('0')">0</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer;" onclick="appendDecimal()">.</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer; background-color: #f39c12; color: #fff;" onclick="appendOperator('+')">+</button>
+        <button style="padding: 15px; font-size: 18px; border-radius: 5px; cursor: pointer; background-color: #4CAF50; color: #fff;" onclick="calculate()">=</button>
+    </div>
+</div>
+</body>
+</html>
